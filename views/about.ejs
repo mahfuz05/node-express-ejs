@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <link rel='stylesheet' href='/stylesheets/bootstrap/css/bootstrap.min.css' />
+  </head>
+  <body>
+
+<!-- Navigation Bar -->
+
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <a class="brand" href="#"> <i class="icon-white icon-leaf"> </i> <%= brand %> </a>
+        <div class="nav-collapse collapse pull-right">
+          <ul class="nav">
+            <li><a href="#"><i class="icon-white icon-home"> </i> Home</a></li>
+            <li><a href="/about"><i class="icon-white icon-user"> </i> About Me</a></li>
+            <li><a href="/feedback"> <i class="icon-white icon-random"> </i>Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<!-- Navigation Bar -->
+
+<div class="container">
+
+  <div class="row">
+    <div class="span3 offset3">
+      <img src="http://placehold.it/150x150" class="img-polaroid">
+    </div>
+    <div class="span6">
+      <h2><%= author %></h2>
+      <h3><%= organization %> </h3>
+      <p><%= bio %></p>
+
+    </div>
+  </div>
+
+<hr> <hr>
+<footer> <p>&copy; <%= author %> <%= copyright %> </p> </footer>
+</div>
+
+  </body>
+</html>
